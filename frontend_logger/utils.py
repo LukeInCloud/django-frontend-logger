@@ -15,7 +15,7 @@ class Cascade(object):
 
 class FuncWrapper(object):
 
-    def __init__(self, func, arg_num=0, f_args=None, f_kwargs=None):
+    def __init__(self, func, arg_num=0, *f_args, **f_kwargs):
         self.func = func
         self.arg_num = arg_num
         if f_args:
